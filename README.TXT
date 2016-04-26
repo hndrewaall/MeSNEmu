@@ -1,3 +1,19 @@
+/****************************
+
+I modified LMAppDelegate.m and LMROMBrowserController.m.
+
+In LMROMBrowserController.m - every time the delegate method "didSelectRomAtIndexPath" is called I just pushed the Rom name into NSUserdefaults in order to save that it was last played. Also, If the rom gets deleted, NSUserdefaults gets updated accordingly. The string array in NSUserdefaults never grows beyond 4 strings (rom names) because of the implementation in order to comply with the fact that force touch shortcuts are limited to 4 options only.
+
+In LMAppDelegate I added supported for force touch on devices that have it available. If the devices do not have force touch, it is handled gracefully by launching the app normally.
+
+Future Update: Will be working on adding downloading roms from safari.
+
+Youtube:
+https://youtu.be/hd8EUgp5Mok
+
+*********************************/
+
+
 README
 ======
 
